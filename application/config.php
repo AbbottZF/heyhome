@@ -147,6 +147,7 @@ return [
         '__UPLOAD__' => '/uploads',
         '__STATIC__' => '/static',
         '__IMAGE__' => '/static/image',
+        '__VENDORS__' => '/static/vendors',
         '__JS__'     => '/static/js',
         '__CSS__'    => '/static/css',
     ],

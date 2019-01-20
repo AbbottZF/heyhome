@@ -1,0 +1,40 @@
+{extend name="base" /}
+{block name="body"}
+<div class="page-wrapper">
+    {include file="base/header"}
+
+    {include file="base/menu"}
+
+    <div class="content">
+        <iframe id="mainiframe" style="width: 100%" src="{:url('admin/index/info')}" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+    </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    /**
+     * 点击菜单
+     */
+    $('.system-menu').on('click', function () {
+        var url = $(this).data('url');
+        if(url){
+            $("#mainiframe").attr("src",url);
+        }
+    });
+    /**
+     * 修改ifeame高度
+     * @returns {undefined}
+     */
+    function changeFrameHeight(){
+        var ifm= document.getElementById("mainiframe");
+        ifm.height=document.documentElement.clientHeight-56;
+    }
+    /***窗口变化修改高度*****/
+    window.onresize=function(){ changeFrameHeight();}
+    /***初始化高度****/
+    window.onload = function(){
+        changeFrameHeight();
+    };
+</script>
+{/block}
