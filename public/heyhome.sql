@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : locahost
+ Source Server         : localhost
  Source Server Type    : MySQL
  Source Server Version : 50553
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 21/01/2019 14:05:20
+ Date: 21/01/2019 23:18:00
 */
 
 SET NAMES utf8mb4;
@@ -34,7 +34,7 @@ CREATE TABLE `hh_action_log`  (
   `update_time` int(11) NULL DEFAULT NULL,
   `delete_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1310 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 1320 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of hh_action_log
@@ -1348,6 +1348,16 @@ INSERT INTO `hh_action_log` VALUES (1306, 1, '登录', NULL, 1, '222.172.134.142
 INSERT INTO `hh_action_log` VALUES (1307, 1, '登录', NULL, 1, '222.172.134.142', '/admin.php/login/login.html', '登录', 1548036878, 1548036878, NULL);
 INSERT INTO `hh_action_log` VALUES (1308, 1, '登录', NULL, 1, '222.172.134.142', '/admin.php/login/login.html', '登录', 1548042293, 1548042293, NULL);
 INSERT INTO `hh_action_log` VALUES (1309, 1, '登录', NULL, 1, '222.172.134.142', '/admin.php/login/login.html', '登录', 1548042293, 1548042293, NULL);
+INSERT INTO `hh_action_log` VALUES (1310, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1311, 1, '登录', 0, 1, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1312, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1313, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1314, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1315, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1316, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1317, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1318, 1, '登录', 0, 2, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
+INSERT INTO `hh_action_log` VALUES (1319, 1, '登录', 0, 1, '127.0.0.1', '/admin.php/login/login.html', '登录', NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for hh_admin_user
@@ -1382,15 +1392,13 @@ CREATE TABLE `hh_admin_user`  (
   UNIQUE INDEX `username`(`username`) USING BTREE,
   INDEX `merchant_id`(`merchant_id`) USING BTREE,
   INDEX `openid`(`openid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '管理员表' ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '管理员表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of hh_admin_user
 -- ----------------------------
-INSERT INTO `hh_admin_user` VALUES (1, NULL, NULL, NULL, NULL, 0, 'super_admin', '09fe7e11eb97bacaa89774cdbb04aa5f', 1, '', '', 1, 206, NULL, 1, 1, NULL, NULL, '0dfc7612f607db6c17fd99388e9e5f9c', 1548042293, '222.172.134.142', NULL, 1525940204, NULL);
-INSERT INTO `hh_admin_user` VALUES (2, NULL, NULL, NULL, NULL, 0, 'admin', '7b79e788e94c1c41b6d4e1b1280c4bdb', 1, 'admin', '', NULL, NULL, NULL, 0, 1, NULL, NULL, NULL, 1547860984, '222.172.244.142', 1530820764, 1541388605, NULL);
-INSERT INTO `hh_admin_user` VALUES (3, NULL, NULL, NULL, NULL, 1, 'mysore', '7b79e788e94c1c41b6d4e1b1280c4bdb', 1, '迈索尔南方国际广场店  ', '0755-23607140', NULL, NULL, NULL, 1, -1, NULL, NULL, NULL, 1547692958, '222.172.135.208', 1547462244, 1547462244, NULL);
-INSERT INTO `hh_admin_user` VALUES (4, NULL, NULL, NULL, NULL, 2, 'mysore-kkone1', '7b79e788e94c1c41b6d4e1b1280c4bdb', 1, '迈索尔KKONE店', '15338858817 ', NULL, NULL, NULL, 1, -1, NULL, NULL, NULL, 1548030342, '222.172.134.142', 1547522253, 1547522253, NULL);
+INSERT INTO `hh_admin_user` VALUES (1, NULL, NULL, NULL, NULL, 0, 'super_admin', '532bfe868214217ba73279b82c0cd44e', 1, '', '', 1, 206, NULL, 1, 1, NULL, NULL, '0dfc7612f607db6c17fd99388e9e5f9c', 1548083130, '127.0.0.1', NULL, 1525940204, NULL);
+INSERT INTO `hh_admin_user` VALUES (2, NULL, NULL, NULL, NULL, 0, 'admin', '9809cfea60dc7b7af7feccf0d41057b6', 1, 'admin', '', NULL, NULL, NULL, 0, 1, NULL, NULL, NULL, 1548082694, '127.0.0.1', 1530820764, 1541388605, NULL);
 
 -- ----------------------------
 -- Table structure for hh_auth_group
@@ -1851,7 +1859,7 @@ INSERT INTO `hh_auth_group_access` VALUES (46, 8);
 -- ----------------------------
 DROP TABLE IF EXISTS `hh_auth_rule`;
 CREATE TABLE `hh_auth_rule`  (
-  `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(8) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '规则名称',
   `title` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `type` tinyint(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1:管理端2：商户端',
@@ -1864,274 +1872,36 @@ CREATE TABLE `hh_auth_rule`  (
   `condition` char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `name`(`name`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 484 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '规则表' ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 26 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '规则表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of hh_auth_rule
 -- ----------------------------
 INSERT INTO `hh_auth_rule` VALUES (1, 'admin/System/default', '系统配置', 1, 1, '系统', 0, 'fa fa-gears', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (87, 'admin/System/add', '添加', 1, 1, NULL, 86, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (86, 'admin/System/config', '用户配置', 1, 1, '', 1, '', 10, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (5, 'admin/Menu/default', '菜单管理', 1, 1, '系统', 0, 'fa fa-bars', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (6, 'admin/Menu/index', '平台菜单', 1, 1, '', 5, '', 1, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (7, 'admin/Menu/add', '添加菜单', 1, 1, NULL, 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (8, 'admin/Menu/save', '保存菜单', 1, 1, NULL, 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (9, 'admin/Menu/edit', '编辑菜单', 1, 1, NULL, 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (10, 'admin/Menu/update', '更新菜单', 1, 1, NULL, 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (11, 'admin/Menu/delete', '删除菜单', 1, 1, NULL, 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (16, 'admin/User/default', '用户管理', 1, 1, '用户', 0, 'fa fa-users', 98, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (108, 'mp/WechatMenu/edit', '发布菜单', 2, 1, NULL, 84, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (18, 'admin/AdminUser/index', '管理员', 1, 1, NULL, 16, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (19, 'admin/AuthGroup/index', '权限组', 1, 1, NULL, 16, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (31, 'admin/AuthGroup/add', '添加权限组', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (32, 'admin/AuthGroup/save', '保存权限组', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (33, 'admin/AuthGroup/edit', '编辑权限组', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (34, 'admin/AuthGroup/update', '更新权限组', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (35, 'admin/AuthGroup/delete', '删除权限组', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (36, 'admin/AuthGroup/auth', '授权', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (37, 'admin/AuthGroup/updateAuthGroupRule', '更新权限组规则', 1, 1, NULL, 19, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (104, 'mp/Fans/sync', '同步粉丝', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (103, 'mp/Tags/sync', '同步标签', 2, 1, NULL, 78, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (102, 'mp/Tags/del', '删除标签', 2, 1, NULL, 78, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (101, 'mp/Tags/edit', '编辑标签', 2, 1, NULL, 78, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (100, 'mp/Tags/add', '添加标签', 2, 1, NULL, 78, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (49, 'admin/AdminUser/add', '添加管理员', 1, 1, NULL, 18, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (50, 'admin/AdminUser/save', '保存管理员', 1, 1, NULL, 18, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (51, 'admin/AdminUser/edit', '编辑管理员', 1, 1, NULL, 18, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (52, 'admin/AdminUser/update', '更新管理员', 1, 1, NULL, 18, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (53, 'admin/AdminUser/delete', '删除管理员', 1, 1, NULL, 18, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (4, 'admin/Menu/default', '菜单管理', 1, 1, '系统', 0, 'fa fa-bars', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (5, 'admin/Menu/index', '平台菜单', 1, 1, '', 5, '', 1, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (6, 'admin/Menu/add', '添加菜单', 1, 1, NULL, 6, '', 0, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (7, 'admin/Menu/save', '保存菜单', 1, 1, NULL, 6, '', 0, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (8, 'admin/Menu/edit', '编辑菜单', 1, 1, NULL, 6, '', 0, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (9, 'admin/Menu/update', '更新菜单', 1, 1, NULL, 6, '', 0, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (10, 'admin/Menu/delete', '删除菜单', 1, 1, NULL, 6, '', 0, 2, '');
+INSERT INTO `hh_auth_rule` VALUES (11, 'admin/User/default', '用户管理', 1, 1, '用户', 0, 'fa fa-users', 98, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (12, 'admin/AdminUser/index', '管理员', 1, 1, NULL, 16, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (13, 'admin/AuthGroup/index', '权限组', 1, 1, NULL, 16, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (14, 'admin/AuthGroup/add', '添加权限组', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (15, 'admin/AuthGroup/save', '保存权限组', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (16, 'admin/AuthGroup/edit', '编辑权限组', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (17, 'admin/AuthGroup/update', '更新权限组', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (18, 'admin/AuthGroup/delete', '删除权限组', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (19, 'admin/AuthGroup/auth', '授权', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (20, 'admin/AuthGroup/updateAuthGroupRule', '更新权限组规则', 1, 1, NULL, 19, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (21, 'admin/AdminUser/add', '添加管理员', 1, 1, NULL, 18, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (22, 'admin/AdminUser/save', '保存管理员', 1, 1, NULL, 18, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (23, 'admin/AdminUser/edit', '编辑管理员', 1, 1, NULL, 18, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (24, 'admin/AdminUser/update', '更新管理员', 1, 1, NULL, 18, '', 0, 1, '');
+INSERT INTO `hh_auth_rule` VALUES (25, 'admin/AdminUser/delete', '删除管理员', 1, 1, NULL, 18, '', 0, 1, '');
 INSERT INTO `hh_auth_rule` VALUES (3, 'admin/System/updateSiteConfig', '修改', 1, 1, NULL, 2, '', 0, 2, '');
 INSERT INTO `hh_auth_rule` VALUES (2, 'admin/System/siteConfig', '站点配置', 1, 1, '', 1, '', 9, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (77, 'mp/Wechat/default', '微信管理', 2, 1, '微信管理', 0, 'fa fa-wechat', 700, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (78, 'mp/Tags/index', '粉丝标签', 2, 1, '客户管理', 373, '', 101, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (79, 'mp/Fans/index', '微信用户', 2, 1, '客户管理', 373, '', 102, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (110, 'mp/default/default', '素材管理', 2, 1, '素材管理', 0, 'fa fa-folder-open', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (81, 'mp/Keys/index', '关键字管理', 2, 1, NULL, 77, '', 95, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (84, 'mp/WechatMenu/index', '微信菜单', 2, 1, NULL, 77, '', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (111, 'mp/News/index', '我的图文素材', 2, 1, '', 416, '', 96, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (88, 'admin/System/edit', '修改', 1, 1, NULL, 86, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (89, 'admin/System/del', '删除', 1, 1, NULL, 86, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (90, 'admin/System/setConfig', '配置', 1, 1, NULL, 86, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (105, 'mp/Fans/backAdd', '加入黑名单', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (106, 'mp/Fans/backOut', '移出黑名单', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (107, 'mp/Fans/setTag', '打标签', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (109, 'mp/WechatMenu/cancel', '取消发布', 2, 1, NULL, 84, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (112, 'mp/Fans/moveIn', '移入分组', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (113, 'mp/Fans/moveOut', '移出分组', 2, 1, NULL, 79, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (114, 'mp/News/add', '添加', 2, 1, NULL, 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (115, 'mp/News/edit', '修改', 2, 1, NULL, 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (116, 'mp/News/del', '删除', 2, 1, NULL, 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (117, 'mp/News/push', '预览', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (118, 'mp/Template/index', '模板消息', 2, 1, NULL, 77, '', 97, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (119, 'mp/Keys/formSubcribe', '关注自动回复', 2, 1, NULL, 77, '', 96, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (120, 'mp/Template/add', '添加', 2, 1, NULL, 118, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (121, 'mp/Template/del', '删除', 2, 1, NULL, 118, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (122, 'mp/Template/testSend', '测试', 2, 1, NULL, 118, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (123, 'mp/Keys/add', '添加', 2, 1, NULL, 81, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (124, 'mp/Keys/edit', '修改', 2, 1, NULL, 81, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (125, 'mp/Keys/del', '删除', 2, 1, NULL, 81, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (126, 'mp/Image/index', '图片库', 2, 1, NULL, 110, '', 99, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (127, 'mp/Image/addTag', '添加分组', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (128, 'mp/Image/editTag', '修改分组', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (129, 'mp/Image/delTag', '删除分组', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (130, 'mp/Image/moveTag', '移动分组', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (131, 'mp/Image/editName', '修改图片名称', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (132, 'mp/Image/del', '删除图片', 2, 1, NULL, 126, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (133, 'mp/Voice/index', '音频库', 2, -1, NULL, 110, '', 98, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (134, 'mp/Vedio/index', '视频库', 2, 1, NULL, 110, '', 97, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (135, 'mp/Voice/editName', '修改名称', 2, -1, NULL, 133, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (136, 'mp/Voice/del', '删除', 2, -1, NULL, 133, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (142, 'admin/MerchantMenu/index', '商户菜单', 1, 1, '', 5, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (408, 'mp/ActivityBargain/detail', '砍价类活动详情', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (139, 'admin/Index/index', '主页', 1, -1, '主页', 0, 'fa fa-home', 101, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (140, 'admin/Menu/authshow', '控制', 1, 1, '', 6, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (141, 'admin/ActionLog/index', '操作日志', 1, -1, '', 1, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (144, 'admin/Merchant/default', '瑜伽馆管理', 1, 1, '瑜伽馆', 0, 'fa fa-building-o', 107, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (145, 'admin/Merchant/index', '瑜伽馆列表', 1, 1, '', 144, '', 10, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (146, 'admin/Merchant/add', '新增', 1, 1, '', 145, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (147, 'admin/Merchant/edit', '修改', 1, 1, '', 145, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (148, 'admin/Merchant/del', '删除', 1, 1, '', 145, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (409, 'mp/ActivitySpike/detail', '秒杀类活动详情', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (429, 'mp/OrderTruntable/ship', '确认发货', 2, 1, '', 421, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (411, 'mp/Customer/getBonus', '计算用户获得积分', 2, 1, '', 374, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (412, 'mp/Customer/updateBonus', '更新用户积分', 2, 1, '', 374, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (413, 'mp/Order/index', '订单管理', 2, 1, '', 310, '', 4, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (396, 'mp/OnlineRefund/index', '线上退款查询', 2, 1, '', 310, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (397, 'mp/CardData/index', '卡券领取统计', 2, 1, '卡券', 331, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (398, 'mp/CardData/useData', '卡券使用统计', 2, 1, '卡券', 331, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (399, 'mp/Activity/default', '活动管理', 2, 1, '营销管理', 0, 'fa fa-trophy', 600, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (403, 'mp/Activity/lst', '活动列表', 2, 1, '', 399, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (404, 'mp/ActivityTurntable/add', '新增抽奖活动', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (405, 'mp/ActivityBargain/add', '新增砍价活动', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (406, 'mp/ActivitySpike/add', '新增限时秒杀', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (407, 'mp/ActivityTurntable/detail', '抽奖类活动详情', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (378, 'mp/GoldConfig/index', '金价管理', 2, 1, '', 310, '', 3, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (379, 'mp/GoldConfig/add', '金价新增', 2, 1, '', 378, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (380, 'mp/GoldConfig/edit', '金价编辑', 2, 1, '', 378, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (381, 'mp/exchangeOrder/detailOrder', '订单详情', 2, 1, '', 339, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (382, 'mp/Customer/bonusrecord', '积分管理', 2, 1, '积分管理', 373, '', 99, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (383, 'mp/Bonus/index', '积分规则', 2, 1, '客户管理', 373, '', 98, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (384, 'mp/Bonus/changestatus', '修改状态', 2, 1, '', 383, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (385, 'mp/Bonus/add', '添加规则', 2, 1, '积分', 383, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (386, 'mp/Bonus/edit', '编辑规则', 2, 1, '积分', 383, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (387, 'mp/exchangeOrder/paydetail', '积分支付详情', 2, 1, '', 370, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (388, 'mp/exchangeOrder/canceldetail', '积分退回详情', 2, 1, '', 371, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (389, 'mp/Policy/getofficialseal', '获取公章', 2, 1, '', 337, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (390, 'mp/GoldCard/edit', '金卡配置', 2, 1, '', 312, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (391, 'mp/MerchantConfig/index', '店面管理', 2, 1, '', 310, '', 6, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (392, 'mp/publics/userInfo', '个人资料', 2, 1, '', 300, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (393, 'mp/publics/updatePassword', '密码修改', 2, 1, '', 300, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (394, 'mp/AdminUserWechat/index', '微信快捷登录', 2, 1, '', 299, '', 1, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (395, 'mp/OnlinePay/index', '线上支付查询', 2, 1, '', 310, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (367, 'mp/News/down', '平台素材库下载', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (368, 'mp/Good/edit', '编辑商品', 2, 1, '', 312, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (369, 'mp/News/pushAll', '群发', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (370, 'mp/ExchangeOrder/pay', '积分支付查询', 2, 1, '', 322, '', 2, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (371, 'mp/ExchangeOrder/cancel', '积分退回查询', 2, 1, '', 322, '', 1, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (373, 'mp/Customer/default', '客户管理', 2, 1, '客户管理', 0, 'fa fa-vcard', 900, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (374, 'mp/Customer/index', '会员管理', 2, 1, '客户管理', 373, '', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (375, 'mp/Customer/add', '新增会员', 2, 1, '会员管理', 374, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (376, 'mp/Customer/edit', '更新会员', 2, 1, '会员管理', 374, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (213, 'mp/Index/userCount', '粉丝统计', 2, -1, '', 296, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (214, 'mp/Index/userCountSex', '粉丝用户性别统计', 2, -1, '', 296, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (215, 'mp/Index/orderCount', '订单交易统计', 2, -1, '', 296, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (416, 'mp/news/default', '图文消息', 2, 1, '微信管理', 0, 'fa fa-window-restore', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (415, 'mp/News/pushRecord', '发送记录', 2, 1, '', 416, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (414, 'mp/Order/detail', '详情', 2, 1, '', 413, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (428, 'mp/OrderTruntable/pick', '确认提货', 2, 1, '', 421, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (351, 'admin/Image/moveTag', '移动分组', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (352, 'admin/Image/editName', '修改图片名称', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (353, 'admin/Image/del', '删除图片', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (354, 'admin/Vedio/index', '视频库', 1, 1, '', 340, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (355, 'admin/Vedio/addTag', '添加分组', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (356, 'admin/Vedio/editTag', '修改分组', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (357, 'admin/Vedio/moveTag', '移动分组', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (358, 'admin/Vedio/delTag', '删除分组', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (359, 'admin/Vedio/editName', '修改文件名称', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (360, 'admin/Vedio/del', '删除文件', 1, 1, '', 354, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (361, 'admin/News/index', '图文库', 1, 1, '', 340, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (362, 'admin/News/add', '添加', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (363, 'admin/News/edit', '修改', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (364, 'admin/News/del', '删除', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (365, 'mp/news/ptIndex', '平台素材库', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (366, 'mp/News/ptEdit', '平台素材库查看', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (335, 'mp/Card/getCard', '卡券领取', 2, 1, '卡券管理', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (336, 'mp/Card/useCard', '卡券使用', 2, 1, '卡券管理', 331, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (337, 'mp/Policy/template', '配置保单', 2, 1, '', 326, '', 99, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (338, 'mp/Policy/officialSeal', '配置公章', 2, 1, '', 326, '', 98, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (339, 'mp/ExchangeOrder/index', '兑换订单管理', 2, 1, '', 322, '', 3, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (340, 'admin/default/default', '素材管理', 1, 1, '素材', 0, 'fa fa-folder-open-o', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (341, 'admin/Image/index', '图片库', 1, 1, '', 340, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (342, 'mp/Vedio/addTag', '添加分组', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (343, 'mp/Vedio/editTag', '修改分组', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (344, 'mp/Vedio/delTag', '删除分组', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (345, 'mp/Vedio/moveTag', '移动分组', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (346, 'mp/Vedio/editName', '修改文件名称', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (347, 'mp/Vedio/del', '删除文件', 2, 1, '', 134, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (348, 'admin/Image/addTag', '添加分组', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (349, 'admin/Image/editTag', '修改分组', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (350, 'admin/Image/delTag', '删除分组', 1, 1, '', 341, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (319, 'mp/Good/add', '新增商品', 2, 1, '', 312, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (320, 'mp/Merchant/edit', '编辑/详情', 2, 1, '', 311, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (321, 'mp/Merchant/updateleadershop', '修改主门店', 2, 1, '', 311, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (322, 'mp/GoodExchange/default', '积分商城', 2, 1, '服务管理', 0, 'fa fa-database', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (323, 'mp/ExchangeGood/index', '兑换商品管理', 2, 1, '', 322, '', 4, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (324, 'mp/ExchangeGood/add', '兑换商品添加', 2, 1, '', 323, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (325, 'mp/ExchangeGood/edit', '兑换商品编辑', 2, 1, '', 323, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (326, 'mp/Policy/default', '保单管理', 2, 1, '服务管理', 0, 'fa fa-building-o', 800, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (327, 'mp/Policy/index', '电子保单', 2, 1, '保单', 326, '', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (328, 'mp/Policy/detail', '保单详情', 2, 1, '保单', 327, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (329, 'mp/Policy/add', '添加保单', 2, 1, '保单', 327, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (330, 'mp/Merchant/del', '删除门店', 2, 1, '', 311, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (331, 'mp/Card/default', '卡券管理', 2, 1, '营销管理', 0, 'fa fa-cc-mastercard', 197, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (332, 'mp/Card/index', '卡券生成', 2, 1, '卡券管理', 331, '', 100, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (333, 'mp/Card/add', '添加卡券', 2, 1, '卡券管理', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (334, 'mp/Card/edit', '编辑卡券', 2, 1, '卡券管理', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (304, 'mp/AdminUser/add', '添加', 2, 1, '', 300, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (305, 'mp/AdminUser/edit', '修改', 2, 1, '', 300, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (306, 'mp/AdminUser/delete', '删除', 2, 1, '', 300, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (307, 'admin/Course/default', '课程管理', 1, 1, '', 0, 'fa fa-calendar-check-o', 106, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (308, 'admin/Type/courseIndex', '课程分类', 1, 1, '', 307, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (309, 'mp/Merchant/default', '门店管理', 2, 1, '门店管理', 0, 'fa fa-bank', 500, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (310, 'mp/MerchantConfig/default', '商城管理', 2, 1, '服务管理', 0, 'fa fa-bars', 198, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (311, 'mp/Merchant/index', '门店详情', 2, 1, '', 309, '', 4, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (312, 'mp/Good/index', '商品管理', 2, 1, '', 310, '', 7, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (313, 'mp/Merchant/add', '添加门店', 2, 1, '', 311, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (314, 'admin/PhoneMenu/index', '移动端菜单', 1, 1, '', 5, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (315, 'admin/PhoneAuthGroup/index', '移动端角色', 1, 1, '', 5, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (317, 'admin/GoodType/default', '商城管理', 1, -1, '', 0, 'fa fa-list', 80, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (318, 'admin/GoodType/index', '商品分类', 1, 1, '', 317, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (295, 'mp/Keys/formFirstSubcribe', '首次关注自动回复', 2, 1, '', 77, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (296, 'mp/Index/default', '首页', 2, 1, '首页', 0, 'fa  fa-home', 10000, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (302, 'mp/wechat/index', '公众号信息', 2, 1, '', 77, '', 101, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (299, 'mp/user/default', '用户管理', 2, 1, '管理员管理', 0, 'fa fa-users', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (300, 'mp/AdminUser/index', '管理员列表', 2, 1, '', 299, '', 2, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (303, 'admin/MpAuthGroup/index', '商户角色', 1, 1, '', 5, '', 0, 2, '');
-INSERT INTO `hh_auth_rule` VALUES (417, 'admin/Type/add', '新增', 1, 1, '', 308, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (418, 'admin/GoodType/add', '新增', 1, 1, '', 318, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (419, 'admin/GoodType/edit', '编辑', 1, 1, '', 318, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (420, 'admin/GoodType/changestatus', '启用、禁用', 1, 1, '', 318, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (421, 'mp/OrderTurntable/index', '抽奖实物奖品订单', 2, 1, '活动管理', 399, 'fa fa-calendar', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (422, 'mp/MerchantConfig/release', '发布', 2, 1, '', 391, '', 99, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (423, 'mp/Order/export', '导出', 2, 1, '', 413, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (424, 'mp/GoldConfig/changestatus', '禁用、启用', 2, 1, '', 378, '', 99, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (425, 'mp/Order/cancel', '取消订单', 2, 1, '', 413, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (426, 'mp/Order/pick', '确认提货', 2, 1, '', 413, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (427, 'mp/Order/ship', '发货', 2, 1, '', 414, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (430, 'mp/OrderTruntable/getExpressList', '获取物流列表', 2, 1, '', 421, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (431, 'mp/ExchangeGood/changestatus', '上架、下架', 2, 1, '', 323, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (432, 'mp/ExchangeOrder/changeStatu', '确认提货、取消订单', 2, 1, '', 339, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (433, 'mp/ExchangeOrder/export', '导出', 2, 1, '', 339, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (434, 'mp/Card/_shorturl', '二维码', 2, 1, '', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (435, 'mp/Card/_bancard', '停用', 2, 1, '', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (436, 'mp/Activity/over', '结束活动', 2, 1, '', 403, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (437, 'mp/Wechat/auth', '重新授权', 2, 1, '', 302, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (438, 'mp/WechatMenu/_choseKeys', '选择关键字', 2, 1, '', 84, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (439, 'mp/Template/_index', '获取模板', 2, 1, '', 118, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (440, 'mp/AdminUserWechat/delete', '删除', 2, 1, '', 394, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (441, 'mp/Bonus/getDateInfo', '积分统计', 2, 1, '客户管理', 373, '', 97, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (442, 'mp/Index/index', '首页', 2, 1, '', 296, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (443, 'mp/Card/export', '导出', 2, 1, '', 332, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (444, 'mp/exchangeGood/detail', '兑换商品详情', 2, 1, '', 323, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (445, 'mp/Bonus/get_bonus', '获得积分统计', 2, 1, '', 441, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (446, 'mp/Bonus/use_bonus', '使用积分统计', 2, 1, '', 441, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (447, 'admin/News/push', '预览', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (448, 'admin/News/addTag', '添加分组', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (449, 'admin/News/editTag', '修改分组', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (450, 'admin/News/delTag', '删除分组', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (451, 'admin/News/moveTag', '移动分组', 1, 1, '', 361, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (452, 'admin/Type/del', '删除', 1, 1, '', 308, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (453, 'mp/News/getMatter', '图文素材库', 2, 1, '', 111, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (454, 'admin/RedEnvelopes/default', '营销管理', 1, 1, '营销管理', 0, 'fa fa-cc-discover', 105, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (455, 'admin/RedEnvelopes/index', '红包管理', 1, 1, '营销管理', 454, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (456, 'admin/Spike/index', '秒杀管理', 1, 1, '营销活动', 454, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (457, 'admin/Card/index', '优惠券管理', 1, 1, '营销管理', 454, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (458, 'admin/TeamBuying/index', '团购管理', 1, 1, '营销管理', 454, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (459, 'admin/Bargain/index', '砍价管理', 1, 1, '营销管理', 454, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (460, 'admin/notes/default', '笔记', 1, 1, '笔记管理', 0, 'fa fa-mixcloud', 104, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (461, 'admin/customer/index', '客户管理', 1, 1, '笔记管理', 460, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (462, 'admin/topic/index', '话题管理', 1, 1, '笔记管理', 460, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (463, 'admin/notes/index', '笔记管理', 1, 1, '笔记管理', 460, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (464, 'admin/Course/index', '课程列表', 1, 1, '', 307, '', 10, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (465, 'admin/Course/add', '新增', 1, 1, '', 464, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (466, 'admin/Course/edit', '编辑', 1, 1, '', 464, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (467, 'admin/Course/del', '删除', 1, 1, '', 464, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (468, 'admin/customer/order', '会员订单', 1, 1, '', 461, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (469, 'admin/customer/notes', '会员帖子', 1, 1, '', 461, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (470, 'admin/customer/details', '会员详情', 1, 1, '', 461, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (471, 'admin/topic/add', '添加话题', 1, 1, '', 462, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (472, 'admin/topic/edit', '编辑话题', 1, 1, '', 462, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (473, 'admin/notes/recommend', '推荐', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (474, 'admin/notes/topping', '置顶', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (475, 'admin/notes/details', '笔记详情', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (476, 'admin/notes/changeStatus', '删除笔记', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (477, 'mp/Coach/default', '老师管理', 2, 1, '门店管理', 0, 'fa fa-vcard-o', 1, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (478, 'mp/Coach/index', '老师列表', 2, 1, '', 477, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (479, 'mp/Coach/add', '新增', 2, 1, '', 478, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (480, 'mp/Coach/edit', '编辑', 2, 1, '', 478, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (481, 'admin/notes/_getEvaluate', '获取评论', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (482, 'admin/notes/getEvaluateList', '显示次级评论', 1, 1, '', 463, '', 0, 1, '');
-INSERT INTO `hh_auth_rule` VALUES (483, 'admin/notes/delEvaluate', '删除评论', 1, 1, '', 463, '', 0, 1, '');
 
 -- ----------------------------
 -- Table structure for hh_system
