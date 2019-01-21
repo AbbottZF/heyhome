@@ -247,4 +247,6 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+    // 全站加密密钥
+    'salt'                   => '95l1Okhalt71L2MHEeTftm4xVlD2avk6',
 ];
