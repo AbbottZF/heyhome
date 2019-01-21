@@ -249,4 +249,8 @@ return [
     ],
     // 全站加密密钥
     'salt'                   => '95l1Okhalt71L2MHEeTftm4xVlD2avk6',
+    //后台不需要权限路由
+    'router_whitelist'=>[
+        'Example/index','admin/index/info'
+    ]
 ];

@@ -12,22 +12,26 @@
 <body>
 <div class="page-wrapper flex-row align-items-center">
     <div class="container">
+        <div id="body_top"></div>
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <div class="card p-4">
                     <div class="card-header text-center text-uppercase h4 font-weight-light">
                         登 录
                     </div>
-                    <form action="{:url('login')}" method="post">
+                    <form class="needs-validation" action="{:url('login')}" method="post" novalidate>
                         <div class="card-body py-5">
                             <div class="form-group">
                                 <label class="form-control-label">账 号</label>
-                                <input type="text" name="username" class="form-control">
+                                <input type="text" maxlength="20" name="username" class="form-control" required>
+                                <!--<div class="valid-feedback"></div>-->
+                                <div class="invalid-feedback">请填写账号</div>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label">密 码</label>
-                                <input type="password" name="password" class="form-control">
+                                <input type="password" maxlength="10" name="password" class="form-control" required>
+                                <div class="invalid-feedback">请填写密码</div>
                             </div>
 
                             <div class="custom-control custom-checkbox mt-4">
@@ -38,7 +42,7 @@
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col-6">
-                                    <button type="submit" class="btn btn-primary px-5">登 录</button>
+                                    <button type="submit" data-submit class="btn btn-primary px-5">登 录</button>
                                 </div>
 
                                 <div class="col-6">
@@ -51,6 +55,7 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="body_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static"></div>
 </div>
 <script src="__VENDORS__/jquery/jquery.min.js"></script>
 <script src="__VENDORS__/popper.js/popper.min.js"></script>
@@ -58,8 +63,8 @@
 <script src="__VENDORS__/chart.js/chart.min.js"></script>
 <script src="__JS__/carbon.js"></script>
 <script src="__JS__/demo.js"></script>
+<script src="__JS__/admin.js"></script>
 <script>
-    
 </script>
 </body>
 </html>

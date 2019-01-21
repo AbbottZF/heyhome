@@ -52,7 +52,7 @@ class Admin extends Controller{
             return true;
         }
         // 排除权限
-        $not_check = json_decode(strtolower(json_encode(config('allow_list'))), true);
+        $not_check = json_decode(strtolower(json_encode(config('router_whitelist'))), true);
         if (!in_array(strtolower($module . '/' . $controller . '/' . $action), $not_check)) {
             $auth = new Auth();
             if (!$auth->check($module . '/' . $controller . '/' . $action, $admin_id) && Session::get('is_admin_'.$admin_id)!=1) {

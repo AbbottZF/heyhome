@@ -14,13 +14,16 @@
         </style>
     </head>
     <body class="sidebar-fixed header-fixed">
+        <div id="body_top"></div>
         {block name="body"}{/block}
+        <div class="modal fade" id="body_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static"></div>
         <script src="__VENDORS__/jquery/jquery.min.js"></script>
         <script src="__VENDORS__/popper.js/popper.min.js"></script>
         <script src="__VENDORS__/bootstrap/js/bootstrap.min.js"></script>
         <script src="__VENDORS__/chart.js/chart.min.js"></script>
         <script src="__JS__/carbon.js"></script>
         <script src="__JS__/demo.js"></script>
+        <script src="__JS__/admin.js"></script>
         {block name="script"}{/block}
     </body>
 </html>

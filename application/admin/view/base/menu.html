@@ -41,7 +41,26 @@
                         </li>
                     </ul>
                 </li>
-
+                {notempty name="menu"}
+                    {foreach name="menu" item="item"}
+                        <li class="nav-item {if condition="!empty($item.children) && count($item.children) > 0"}nav-dropdown{/if}" >
+                            <a href="javaScript:#;" data-url="{:url($item.name)}" class="nav-link system-menu">
+                                <i class="icon icon-speedometer"></i> {$item.title}
+                            </a>
+                            {notempty name="item.children"}
+                                {foreach name="item.children" item="vo"}
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a href="javaScript:#;" data-url="{:url($vo.name)}" class="nav-link system-menu">
+                                            <i class="icon icon-energy"></i> {$vo.title}
+                                        </a>
+                                    </li>
+                                </ul>
+                                {/foreach}
+                            {/notempty}
+                        </li>
+                    {/foreach}
+                {/notempty}
                 <li class="nav-item nav-dropdown">
                     <a href="#" class="nav-link nav-dropdown-toggle">
                         <i class="icon icon-energy"></i> UI Kits <i class="fa fa-caret-left"></i>

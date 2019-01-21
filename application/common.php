@@ -502,7 +502,27 @@ function randStr($s = 32) {
     $chars = str_shuffle($chars);
     return substr($chars, 3, $s);
 }
-
+/**
+ * ajax错误返回
+ * @param type $msg
+ * @param type $url
+ * @param type $data
+ */
+function ajax_error($msg = "", $url = "", $data = ""){
+    $result = ['msg' => $msg,'code' => 0,'url' => $url,'data' => $data];
+    return json($result);
+}
+/**
+ * ajax成功返回
+ * @param type $msg
+ * @param type $url
+ * @param type $data
+ * @return type
+ */
+function ajax_success($msg = "", $url = "", $data = ""){
+    $result = ['msg' => $msg,'code' => 1,'url' => $url,'data' => $data];
+    return json($result);
+}
 /**
  * ajaxMsg
  * @param type $msg 提示信息

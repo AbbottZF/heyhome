@@ -29,32 +29,32 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="__IMAGE__/avatar-1.png" class="avatar avatar-sm" alt="logo">
-                <span class="small ml-1 d-md-down-none">John Smith</span>
+                <span class="small ml-1 d-md-down-none">{:session("admin_user.username")}</span>
             </a>
 
             <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-header">Account</div>
+                <div class="dropdown-header">账 号</div>
 
                 <a href="#" class="dropdown-item">
                     <i class="fa fa-user"></i> Profile
                 </a>
 
                 <a href="#" class="dropdown-item">
-                    <i class="fa fa-envelope"></i> Messages
+                    <i class="fa fa-envelope"></i> 消 息
                 </a>
 
-                <div class="dropdown-header">Settings</div>
+                <div class="dropdown-header">设 置</div>
 
                 <a href="#" class="dropdown-item">
-                    <i class="fa fa-bell"></i> Notifications
-                </a>
-
-                <a href="#" class="dropdown-item">
-                    <i class="fa fa-wrench"></i> Settings
+                    <i class="fa fa-bell"></i> 通 知
                 </a>
 
                 <a href="#" class="dropdown-item">
-                    <i class="fa fa-lock"></i> Logout
+                    <i class="fa fa-wrench"></i> 设 置
+                </a>
+
+                <a href="{:url('Login/logout')}" class="dropdown-item">
+                    <i class="fa fa-lock"></i> 退 出
                 </a>
             </div>
         </li>
