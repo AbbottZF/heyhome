@@ -2,5 +2,6 @@
 composer.lock
 *.log
 thinkphp
+/runtime
 ### NetBeans ###
-/nbproject/private
+/nbproject
