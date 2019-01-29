@@ -28,7 +28,7 @@ www  WEB部署目录（或者子目录）
 │  ├─index.php          入口文件
 │  ├─router.php         快速测试文件
 │  └─.htaccess          用于apache的重写
-|  └─heyhome.sql        sql文件
+|  └─install.sql        sql文件
 ~~~
 
 ## 命名规范
