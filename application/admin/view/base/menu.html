@@ -9,7 +9,11 @@
                         <i class="icon icon-speedometer"></i> 仪表盘
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a href="#" data-url="{:url('WebConfig/index')}" class="nav-link system-menu">
+                        <i class="icon icon-puzzle"></i> 网站设置
+                    </a>
+                </li>
                 <li class="nav-item nav-dropdown">
                     <a  href="javaScript:#;" class="nav-link nav-dropdown-toggle">
                         <i class="icon icon-target"></i> 布局 <i class="fa fa-caret-left"></i>
@@ -41,11 +45,37 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item nav-dropdown">
+                    <a  href="javaScript:#;" class="nav-link nav-dropdown-toggle">
+                        <i class="icon icon-target"></i> 系统菜单 <i class="fa fa-caret-left"></i>
+                    </a>
+
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a href="#" data-url="{:url('admin/AuthRule/index')}" class="nav-link system-menu">
+                                <i class="icon icon-target"></i> 菜单配置
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" data-url="{:url('admin/AuthGroup/index')}" class="nav-link system-menu">
+                                <i class="icon icon-target"></i> 角色配置
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" data-url="{:url('admin/AdninUser/index')}" class="nav-link system-menu">
+                                <i class="icon icon-target"></i> 管理员配置
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 {notempty name="menu"}
                     {foreach name="menu" item="item"}
-                        <li class="nav-item {if condition="!empty($item.children) && count($item.children) > 0"}nav-dropdown{/if}" >
-                            <a href="javaScript:#;" data-url="{:url($item.name)}" class="nav-link system-menu">
+                        <li class="nav-item nav-dropdown">
+                            <a href="javaScript:#;" data-url="{:url($item.name)}" class="nav-link nav-dropdown-toggle system-menu">
                                 <i class="icon icon-speedometer"></i> {$item.title}
+                                {if condition="!empty($item.children) && count($item.children) > 0"}<i class="fa fa-caret-left"></i>{/if}
                             </a>
                             {notempty name="item.children"}
                                 {foreach name="item.children" item="vo"}

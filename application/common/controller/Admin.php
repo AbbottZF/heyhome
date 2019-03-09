@@ -7,6 +7,7 @@ use think\Db;
 use think\Session;
 use app\common\model\ActionLog;
 use app\utils\service\ConfigService;
+use app\common\model\WebConfig as C;
 /**
  * Description of Admin
  *
@@ -14,9 +15,13 @@ use app\utils\service\ConfigService;
  */
 class Admin extends Controller{
     
-    
+    protected $config_model;
+
     protected function _initialize() {
         parent::_initialize();
+        $this->config_model = new C();
+        $web = $this->config_model->getInfo();
+        $this->assign('webtitle',$web);
         //加载系统配置
         ConfigService::config();
         $this->getMenu();

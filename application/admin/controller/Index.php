@@ -8,6 +8,11 @@ use app\common\controller\Admin;
  */
 class Index extends Admin{
     
+    protected function _initialize() {
+        parent::_initialize();
+    }
+
+
     public function index(){
         return $this->fetch('base/main');
     }
