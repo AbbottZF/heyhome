@@ -1,0 +1,47 @@
+{extend name="base" /}
+{block name="body"}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-light">
+                    房间新增
+                </div>
+
+                <div class="card-body">
+                    <form class="needs-validation" action="{:url('add')}" method="post" novalidate>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="normal-input" class="form-control-label">房间名称</label>
+                                    <input id="normal-input" class="form-control" name="name" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="normal-input" class="form-control-label">床型</label>
+                                    <input id="normal-input" class="form-control" name="seat" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="normal-input" class="form-control-label">显示顺序</label>
+                                    <input id="normal-input" class="form-control" name="sort" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" data-submit class="btn btn-primary px-5">保 存</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
