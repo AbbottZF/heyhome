@@ -1,6 +1,10 @@
 HeyHome,基于ThinkPHP 5.0二次开发
 ===============
 
+直接运行index.html即可查看[api文档](file://index.html)
+
+文档编译工具 [apidoc](http://apidocjs.com/)
+
 [![Total Downloads](https://poser.pugx.org/topthink/think/downloads)](https://packagist.org/packages/topthink/think)
 [![Latest Stable Version](https://poser.pugx.org/topthink/think/v/stable)](https://packagist.org/packages/topthink/think)
 [![Latest Unstable Version](https://poser.pugx.org/topthink/think/v/unstable)](https://packagist.org/packages/topthink/think)
